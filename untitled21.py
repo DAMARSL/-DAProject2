@@ -100,17 +100,7 @@ import streamlit as st
 # Arka plan resmini ekleme
 st.markdown(
     """
-    <style>
-    .block-container {
-        background-image: url('https://www.cleartouch.in/wp-content/uploads/2022/11/Customer-Churn.png');
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-    }
-    </style>
+    <div style="text-align: center;">
+        <img src="https://www.cleartouch.in/wp-content/uploads/2022/11/Customer-Churn.png" width="80%" />
+    </div>
     """, unsafe_allow_html=True)
-
-# Diğer içerikler
-st.title("Arka Plan Resmi Ekleme")
-st.write("Bu uygulamanın arka planına bir resim eklendi.")
-
