@@ -98,15 +98,3 @@ if prediction[0] == 0:
     st.subheader("Customer will NOT churn.")
 else:
     st.subheader("Customer will churn.")
-
-# Kullanılan kütüphaneleri listele
-with open("requirements.txt", "w") as f:
-    f.write("streamlit\n")
-    f.write("pandas\n")
-    f.write("numpy\n")
-    f.write("scikit-learn\n")
-    f.write("matplotlib\n")
-    f.write("seaborn\n")
-
-# Dosyanın oluşturulduğunu kontrol et
-!cat requirements.txt
