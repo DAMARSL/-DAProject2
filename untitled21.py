@@ -95,13 +95,22 @@ if prediction[0] == 0:
 else:
     st.subheader("Customer will churn.")
 
+import streamlit as st
+
+# Arka plan resmini ekleme
 st.markdown(
     """
     <style>
-    body {
+    .block-container {
         background-image: url('https://www.cleartouch.in/wp-content/uploads/2022/11/Customer-Churn.png');
         background-size: cover;
         background-position: center center;
+        background-repeat: no-repeat;
     }
     </style>
     """, unsafe_allow_html=True)
+
+# Diğer içerikler
+st.title("Arka Plan Resmi Ekleme")
+st.write("Bu uygulamanın arka planına bir resim eklendi.")
+
