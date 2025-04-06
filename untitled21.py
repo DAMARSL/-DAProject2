@@ -67,7 +67,6 @@ user_data = {
     "Internet Service_Fiber optic": 1 if internet_service == "Fiber optic" else 0,
     "Payment Method_Electronic check": 1 if payment_method == "Electronic check" else 0,
     "Monthly Charges": monthly_charges,
-    "Paperless Billing_Yes": 1 if paperless_billing == "Yes" else 0,
     "Tech Support_No internet service": 1 if tech_support == "No internet service" else 0,
     "Device Protection_No internet service": 1 if device_protection == "No internet service" else 0,
     "Internet Service_No": 1 if internet_service == "No" else 0,
