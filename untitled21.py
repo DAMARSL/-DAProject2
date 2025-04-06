@@ -23,6 +23,16 @@ st.markdown(
     </div>
     """, unsafe_allow_html=True)
 
+# Sayfa arka plan rengini değiştirmek için CSS
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: #f0f0f0;  /* Açık gri */
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
 
 # Kullanıcıdan veri almak için widget'lar
 
