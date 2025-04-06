@@ -83,7 +83,7 @@ X = df_encoded[["Internet Service_Fiber optic", "Payment Method_Electronic check
 
 y=df_encoded["Churn Value"]
 
-!pip install imbalanced-learn
+pip install imbalanced-learn
 import pandas as pd
 import numpy as np
 from sklearn.impute import SimpleImputer
@@ -152,7 +152,7 @@ with open('random_forest_model.pkl', 'wb') as f:
 
 print("Model başarıyla kaydedildi!")
 
-!pip install streamlit
+pip install streamlit
 
 import streamlit as st
 import pandas as pd
