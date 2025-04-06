@@ -30,7 +30,7 @@ st.markdown("""
         text-align: center;  /* Ortalamak */
     }
     </style>
-    <h1>Telecom Churn Prediction</h1>
+    <h1>Telco Churn Prediction</h1>
 """, unsafe_allow_html=True)
 
 # Resim ekleme
