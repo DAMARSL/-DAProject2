@@ -27,8 +27,6 @@ preset_colors: list[tuple[str, ThemeColor]] = [
             textColor="#fafafa",
     ))
 ]
------------------------------------
-
 
 # Sayfa arka plan rengini değiştirmek için CSS
 st.markdown("""
