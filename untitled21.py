@@ -13,21 +13,6 @@ import pandas as pd
 import pickle
 
 
-preset_colors: list[tuple[str, ThemeColor]] = [
-    ("Default light", ThemeColor(
-            primaryColor="#ff4b4b",
-            backgroundColor="#ffffff",
-            secondaryBackgroundColor="#f0f2f6",
-            textColor="#31333F",
-        )),
-    ("Default dark", ThemeColor(
-            primaryColor="#ff4b4b",
-            backgroundColor="#0e1117",
-            secondaryBackgroundColor="#262730",
-            textColor="#fafafa",
-    ))
-]
-
 # Sayfa arka plan rengini değiştirmek için CSS
 st.markdown("""
     <style>
