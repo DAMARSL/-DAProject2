@@ -15,6 +15,15 @@ import pickle
 # Başlık
 st.title("Telecom Churn Prediction")
 
+# Resim ekleme
+st.markdown(
+    """
+    <div style="text-align: center;">
+        <img src="https://www.cleartouch.in/wp-content/uploads/2022/11/Customer-Churn.png" width="80%" />
+    </div>
+    """, unsafe_allow_html=True)
+
+
 # Kullanıcıdan veri almak için widget'lar
 
 # Categorical features
@@ -91,16 +100,9 @@ prediction = model.predict(user_df)
 
 # Tahminin sonucu
 if prediction[0] == 0:
-    st.subheader("Customer will NOT churn.")
+    st.subheader("Customer will NOT churn:)")
 else:
-    st.subheader("Customer will churn.")
+    st.subheader("Customer will churn:(")
 
 import streamlit as st
 
-# Arka plan resmini ekleme
-st.markdown(
-    """
-    <div style="text-align: center;">
-        <img src="https://www.cleartouch.in/wp-content/uploads/2022/11/Customer-Churn.png" width="80%" />
-    </div>
-    """, unsafe_allow_html=True)
