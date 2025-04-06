@@ -13,34 +13,20 @@ import pandas as pd
 import pickle
 
 
-import { transparentize } from "color2k"
-import { colors } from "src/theme/primitives/colors"
-
-export default {
-  ...colors,
-  bgColor: colors.gray100,
-  secondaryBg: colors.gray90,
-  bodyText: colors.gray10,
-  warning: colors.yellow20,
-  warningBg: transparentize(colors.yellow70, 0.8),
-  success: colors.green10,
-  successBg: transparentize(colors.green60, 0.8),
-  info: colors.blue20,
-  infoBg: transparentize(colors.blue60, 0.8),
-  danger: colors.red20,
-  dangerBg: transparentize(colors.red60, 0.8),
-  primary: colors.red70,
-  disabled: colors.gray70,
-  lightestGray: colors.gray20,
-  lightGray: colors.gray30,
-  gray: colors.gray60,
-  darkGray: colors.gray70,
-  red: colors.red80,
-  blue: colors.blue80,
-  green: colors.green80,
-  yellow: colors.yellow80,
-}
-
+preset_colors: list[tuple[str, ThemeColor]] = [
+    ("Default light", ThemeColor(
+            primaryColor="#ff4b4b",
+            backgroundColor="#ffffff",
+            secondaryBackgroundColor="#f0f2f6",
+            textColor="#31333F",
+        )),
+    ("Default dark", ThemeColor(
+            primaryColor="#ff4b4b",
+            backgroundColor="#0e1117",
+            secondaryBackgroundColor="#262730",
+            textColor="#fafafa",
+    ))
+]
 -----------------------------------
 
 
