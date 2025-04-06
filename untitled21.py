@@ -23,7 +23,15 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Başlık
-st.title("Telecom Churn Prediction")
+st.markdown("""
+    <style>
+    h1 {
+        color: #333333;  /* Koyu gri renk */
+        text-align: center;  /* Ortalamak */
+    }
+    </style>
+    <h1>Telecom Churn Prediction</h1>
+""", unsafe_allow_html=True)
 
 # Resim ekleme
 st.markdown(
