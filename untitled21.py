@@ -94,3 +94,14 @@ if prediction[0] == 0:
     st.subheader("Customer will NOT churn.")
 else:
     st.subheader("Customer will churn.")
+
+st.markdown(
+    """
+    <style>
+    body {
+        background-image: url('https://www.cleartouch.in/wp-content/uploads/2022/11/Customer-Churn.png');
+        background-size: cover;
+        background-position: center center;
+    }
+    </style>
+    """, unsafe_allow_html=True)
