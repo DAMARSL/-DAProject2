@@ -91,7 +91,7 @@ with open('random_forest_model.pkl', 'rb') as model_file:
     model = pickle.load(model_file)
 
 # Tahmin yapma
-prediction = clf.predict(user_df)
+prediction = model.predict(user_df)
 
 # Tahminin sonucu
 if prediction[0] == 0:
