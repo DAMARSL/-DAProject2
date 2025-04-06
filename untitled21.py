@@ -29,9 +29,6 @@ payment_method = st.selectbox(
 # Numerical features
 monthly_charges = st.number_input("Monthly Charges", min_value=0, max_value=200, value=70)
 
-paperless_billing = st.radio(
-    "Paperless Billing", ["Yes", "No"], index=0
-)
 
 tech_support = st.radio(
     "Tech Support", ["Yes", "No", "No internet service"], index=2
