@@ -26,7 +26,7 @@ st.markdown("""
 st.markdown("""
     <style>
     h1 {
-        color: #333333;  /* Koyu gri renk */
+        color: #6c575d;  /* Koyu gri renk */
         text-align: center;  /* Ortalamak */
     }
     </style>
