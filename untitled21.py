@@ -12,6 +12,17 @@ import streamlit as st
 import pandas as pd
 import pickle
 
+
+# Sayfa arka plan rengini değiştirmek için CSS
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: #e0e0e0;  /* Açık gri */
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
 # Başlık
 st.title("Telecom Churn Prediction")
 
@@ -23,15 +34,6 @@ st.markdown(
     </div>
     """, unsafe_allow_html=True)
 
-# Sayfa arka plan rengini değiştirmek için CSS
-st.markdown(
-    """
-    <style>
-    body {
-        background-color: #e0e0e0;  /* Açık gri */
-    }
-    </style>
-    """, unsafe_allow_html=True)
 
 
 # Kullanıcıdan veri almak için widget'lar
