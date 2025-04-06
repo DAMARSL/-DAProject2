@@ -14,14 +14,13 @@ import pickle
 
 
 # Sayfa arka plan rengini değiştirmek için CSS
-st.markdown(
-    """
+st.markdown("""
     <style>
     body {
-        background-color: #e0e0e0;  /* Açık gri */
+        background-color: #e0e0e0 !important;
     }
     </style>
-    """, unsafe_allow_html=True)
+""", unsafe_allow_html=True)
 
 # Başlık
 st.title("Telecom Churn Prediction")
