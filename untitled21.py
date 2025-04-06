@@ -28,7 +28,7 @@ st.markdown(
     """
     <style>
     body {
-        background-color: #f0f0f0;  /* Açık gri */
+        background-color: #e0e0e0;  /* Açık gri */
     }
     </style>
     """, unsafe_allow_html=True)
