@@ -16,8 +16,7 @@ import pickle
 st.markdown("""
     <style>
     body {
-        background-image: url(''https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Ffree-vector%2Fblue-abstract-background&psig=AOvVaw0T_qBjaGpRei4bgUw26v4w&ust=1744117972076000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMjTuvr_xYwDFQAAAAAdAAAAABAJ'
-');
+        background-image: url('https://www.istockphoto.com/tr/vekt%C3%B6r/yarat%C4%B1c%C4%B1-arka-plan-gm1044717842-279601430');
         background-size: cover;
         background-position: center;
     }
