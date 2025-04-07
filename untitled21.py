@@ -21,16 +21,10 @@ st.markdown("""
         background-position: center;
     }
     </style>
-""", unsafe_allow_html=True)
+""")
 
 # Sayfa arka plan rengini değiştirmek için CSS
-st.markdown("""
-    <style>
-    body {
-        background-color: #ffffff !important;
-    }
-    </style>
-""", unsafe_allow_html=True)
+
 
 # Başlık
 st.markdown("""
