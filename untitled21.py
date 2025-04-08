@@ -20,19 +20,6 @@ power_bi_url = "https://app.powerbi.com/reportEmbed?reportId=da7aa0de-ff6f-428e-
 components.iframe(power_bi_url, width=800, height=600)
 
 
-# Arkaplanı CSS ile ekleyin
-st.markdown("""
-    <style>
-    body {
-        background-image: url('https://www.istockphoto.com/tr/vekt%C3%B6r/yarat%C4%B1c%C4%B1-arka-plan-gm1044717842-279601430');
-        background-size: cover;
-        background-position: center;
-    }
-    </style>
-""")
-
-# Sayfa arka plan rengini değiştirmek için CSS
-
 
 # Başlık
 st.markdown("""
