@@ -11,6 +11,14 @@ Original file is located at
 import streamlit as st
 import pandas as pd
 import pickle
+import streamlit.components.v1 as components
+
+# Power BI embed linkinizi buraya ekleyin
+power_bi_url = "https://app.powerbi.com/reportEmbed?reportId=da7aa0de-ff6f-428e-b4ae-8e3defef0dd5&autoAuth=true&ctid=e4dddef5-d743-42fa-99da-83120e7bf32e"
+
+# Embed kodunu kullanarak Power BI raporunu gömme
+components.iframe(power_bi_url, width=800, height=600)
+
 
 # Arkaplanı CSS ile ekleyin
 st.markdown("""
