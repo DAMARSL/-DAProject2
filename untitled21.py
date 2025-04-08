@@ -120,6 +120,6 @@ import streamlit as st
 power_bi_url = "https://app.powerbi.com/reportEmbed?reportId=da7aa0de-ff6f-428e-b4ae-8e3defef0dd5&autoAuth=true&ctid=e4dddef5-d743-42fa-99da-83120e7bf32e"
 
 # Embed kodunu kullanarak Power BI raporunu gömme
-components.iframe(power_bi_url, width=800, height=600)
+components.iframe(power_bi_url, width=1200, height=600)
 
 
