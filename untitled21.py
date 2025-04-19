@@ -1,47 +1,3 @@
-import streamlit as st
-import pandas as pd
-import pickle
-import streamlit.components.v1 as components
-
-st.set_page_config(layout="wide")  # Sayfayı geniş modda başlat
-
-# Başlık ve görsel
-st.markdown("""
-    <style>
-    h1 {
-        color: #6c575d;
-        text-align: center;
-    }
-    </style>
-    <h1>Telco Customer Churn Prediction</h1>
-""", unsafe_allow_html=True)
-
-st.markdown("""
-    <div style="text-align: center;">
-        <img src="https://www.cleartouch.in/wp-content/uploads/2022/11/Customer-Churn.png" width="80%" />
-    </div>
-""", unsafe_allow_html=True)
-
-# Sayfa iki sütuna bölünüyor
-col1, col2 = st.columns([1, 2])  # Sol daha dar, sağ daha geniş
-
-# === SOL KISIM: Kullanıcı Girdileri ===
-with col1:
-    st.header("Customer Info")
-
-    internet_service = st.selectbox("Internet Service", ["No", "DSL", "Fiber optic"], index=2)
-    payment_method = st.selectbox("Payment Method", ["Electronic check", "Mailed check", "Bank transfer (automatic)", "Credit card (automatic)"], index=0)
-    monthly_charges = st.number_input("Monthly Charges", min_value=0, max_value=200, value=70)
-    tech_support = st.radio("Tech Support", ["Yes", "No", "No internet service"], index=2)
-    device_protection = st.radio("Device Protection", ["Yes", "No", "No internet service"], index=2)
-    streaming_tv = st.radio("Streaming TV", ["Yes", "No", "No internet service"], index=2)
-    online_backup = st.radio("Online Backup", ["Yes", "No", "No internet service"], index=2)
-    online_security = st.radio("Online Security", ["Yes", "No", "No internet service"], index=2)
-    streaming_movies = st.radio("Streaming Movies", ["Yes", "No", "No internet service"], index=2)
-    dependents = st.radio("Dependents", ["Yes", "No"], index=0)
-    contract = st.selectbox("Contract", ["Month-to-month", "One year", "Two year"], index=2)
-    tenure_months = st.number_input("Tenure (Months)", min_value=0, max_value=100, value=10)
-
 # === SAĞ KISIM: Tahmin ve Dashboard ===
 with col2:
     st.header("Prediction Result & Dashboard")
@@ -70,15 +26,24 @@ with col2:
 
     prediction = model.predict(user_df)
 
-    # Tahmin sonucu
-    if prediction[0] == 0:
-        st.subheader("Customer will NOT churn 🙂")
-    else:
-        st.subheader(" ⚠️ Customer will churn 😟")
+    # === Tahmin sonucunu hemen giriş alanlarının altına göster ===
+    with st.container():
+        if prediction[0] == 0:
+            st.success("Customer will NOT churn 🙂")
+        else:
+            st.warning("⚠️ Customer will churn 😟")
 
     st.markdown("---")
 
+    # === Kısa açıklama ekle ===
+    st.subheader("About the Telco Dataset")
+    st.markdown("""
+    The **Telco Customer Churn** dataset contains information about customers of a fictional telecom company.
+    It includes service usage, account details, and demographic data.  
+    The primary goal is to predict whether a customer is likely to **churn** (leave the service).
+    """)
+
+    # === Power BI Dashboard ===
     st.subheader("Source Analysis with EDA")
     power_bi_url = "https://app.powerbi.com/reportEmbed?reportId=da7aa0de-ff6f-428e-b4ae-8e3defef0dd5&autoAuth=true&ctid=e4dddef5-d743-42fa-99da-83120e7bf32e&navContentPaneEnabled=false&filterPaneEnabled=false"
     components.iframe(power_bi_url, width=800, height=400)
-
