@@ -76,7 +76,7 @@ with col1:
 with col2:
     st.header("Prediction Result & Dashboard")
     st.markdown("---")
-    st.markdown("The Telco Customer Churn dataset contains information about a fictional telecommunications company’s customers. It is commonly used for building predictive models that aim to identify customers who are at risk of churning — that is, canceling their subscription.
+    st.markdown("""The Telco Customer Churn dataset contains information about a fictional telecommunications company’s customers. It is commonly used for building predictive models that aim to identify customers who are at risk of churning — that is, canceling their subscription.
 
 The dataset includes:
 
@@ -86,7 +86,7 @@ Service-related features, including whether the customer subscribes to services 
 
 Contract and billing information, such as contract type (monthly or yearly), payment method, monthly charges, and tenure (how long the customer has been with the company).
 
-The target variable: Churn — indicating whether the customer has left the company or not.")
+The target variable: Churn — indicating whether the customer has left the company or not.""")
     st.subheader("Source Analysis with EDA")
     power_bi_url = "https://app.powerbi.com/reportEmbed?reportId=da7aa0de-ff6f-428e-b4ae-8e3defef0dd5&autoAuth=true&ctid=e4dddef5-d743-42fa-99da-83120e7bf32e&navContentPaneEnabled=false&filterPaneEnabled=false"
     components.iframe(power_bi_url, width=800, height=400)
