@@ -74,7 +74,7 @@ with col1:
 
 # === SAĞ KISIM: Tahmin ve Dashboard ===
 with col2:
-    st.header("Prediction Result & Dashboard")
+    st.header("About Dataset")
     st.markdown("---")
     st.markdown("""The Telco Customer Churn dataset contains information about a fictional telecommunications company’s customers. It is commonly used for building predictive models that aim to identify customers who are at risk of churning — that is, canceling their subscription.
      st.markdown("---")
