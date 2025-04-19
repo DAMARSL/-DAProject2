@@ -80,5 +80,5 @@ with col2:
 
     st.subheader("Source Analysis with EDA")
     power_bi_url = "https://app.powerbi.com/reportEmbed?reportId=da7aa0de-ff6f-428e-b4ae-8e3defef0dd5&autoAuth=true&ctid=e4dddef5-d743-42fa-99da-83120e7bf32e&navContentPaneEnabled=false&filterPaneEnabled=false"
-    components.iframe(power_bi_url, width=700, height=350)
+    components.iframe(power_bi_url, width=800, height=400)
 
