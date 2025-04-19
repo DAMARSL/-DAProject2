@@ -79,6 +79,6 @@ with col2:
     st.markdown("---")
 
     st.subheader("📊 Power BI Dashboard")
-    power_bi_url = "power_bi_url = "https://app.powerbi.com/reportEmbed?reportId=...&autoAuth=true&ctid=...&navContentPaneEnabled=false&filterPaneEnabled=false"
+    power_bi_url = "https://app.powerbi.com/reportEmbed?reportId=...&autoAuth=true&ctid=...&navContentPaneEnabled=false&filterPaneEnabled=false"
     components.iframe(power_bi_url, width=1000, height=600)
 
