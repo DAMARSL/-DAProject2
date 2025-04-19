@@ -42,10 +42,6 @@ with col1:
     contract = st.selectbox("Contract", ["Month-to-month", "One year", "Two year"], index=2)
     tenure_months = st.number_input("Tenure (Months)", min_value=0, max_value=100, value=10)
 
-# === SAĞ KISIM: Tahmin ve Dashboard ===
-with col2:
-    st.header("Prediction Result & Dashboard")
-
     user_data = {
         "Internet Service_Fiber optic": 1 if internet_service == "Fiber optic" else 0,
         "Payment Method_Electronic check": 1 if payment_method == "Electronic check" else 0,
@@ -75,6 +71,11 @@ with col2:
         st.subheader("Customer will NOT churn 🙂")
     else:
         st.subheader(" ⚠️ Customer will churn 😟")
+
+# === SAĞ KISIM: Tahmin ve Dashboard ===
+with col2:
+    st.header("Prediction Result & Dashboard")
+
 
     st.markdown("---")
 
