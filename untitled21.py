@@ -27,7 +27,7 @@ col1, col_mid, col2 = st.columns([1, 0.02, 2])
 
 # === SOL KISIM: Kullanıcı Girdileri ===
 with col1:
-    st.header("Customer Info")
+    st.header("Customer Churn Prediction")
 
     internet_service = st.selectbox("Internet Service", ["No", "DSL", "Fiber optic"], index=2)
     payment_method = st.selectbox("Payment Method", ["Electronic check", "Mailed check", "Bank transfer (automatic)", "Credit card (automatic)"], index=0)
